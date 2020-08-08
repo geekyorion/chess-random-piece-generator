@@ -41,6 +41,7 @@ body {
     display: flex;
     position: relative;
     top: -40px;
+    text-align: center;
 }
 
 .checkbox {
