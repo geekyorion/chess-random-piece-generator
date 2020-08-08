@@ -12,14 +12,66 @@
 <body>
     <div class="wrapper">
         <div class="pieces-area area-white">
-            <div class="alive"></div>
+            <div class="alive">
+                <div class="checkbox">
+                    <input type="checkbox" name="white-pieces" id="white-queen" checked
+                        onchange="modifyPieces(this, 'White', 'Queen');" />
+                    <label for="white-queen">Queen</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="white-pieces" id="white-rook" checked
+                        onchange="modifyPieces(this, 'White', 'Rook');" />
+                    <label for="white-rook">Rook</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="white-pieces" id="white-bishop" checked
+                        onchange="modifyPieces(this, 'White', 'Bishop');" />
+                    <label for="white-bishop">Bishop</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="white-pieces" id="white-knight" checked
+                        onchange="modifyPieces(this, 'White', 'Knight');" />
+                    <label for="white-knight">Knight</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="white-pieces" id="white-pawn" checked
+                        onchange="modifyPieces(this, 'White', 'Pawn');" />
+                    <label for="white-pawn">Pawn</label>
+                </div>
+            </div>
             <div id="white"></div>
             <div class="controls"><button class="btn btn-white" onclick="generatePieces('White');">Generate
                     White</button></div>
         </div>
 
         <div class="pieces-area area-black">
-            <div class="alive"></div>
+            <div class="alive">
+                <div class="checkbox">
+                    <input type="checkbox" name="black-pieces" id="black-queen" checked
+                        onchange="modifyPieces(this, 'Black', 'Queen');" />
+                    <label for="black-queen">Queen</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="black-pieces" id="black-rook" checked
+                        onchange="modifyPieces(this, 'Black', 'Rook');" />
+                    <label for="black-rook">Rook</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="black-pieces" id="black-bishop" checked
+                        onchange="modifyPieces(this, 'Black', 'Bishop');" />
+                    <label for="black-bishop">Bishop</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="black-pieces" id="black-knight" checked
+                        onchange="modifyPieces(this, 'Black', 'Knight');" />
+                    <label for="black-knight">Knight</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="black-pieces" id="black-pawn" checked
+                        onchange="modifyPieces(this, 'Black', 'Pawn');" />
+                    <label for="black-pawn">Pawn</label>
+                </div>
+            </div>
             <div id="black"></div>
             <div class="controls"><button class="btn btn-black" onclick="generatePieces('Black');">Generate
                     Black</button></div>

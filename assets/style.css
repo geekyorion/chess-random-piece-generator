@@ -37,6 +37,16 @@ body {
     border-color: white;
 }
 
+.alive {
+    display: flex;
+    position: relative;
+    top: -40px;
+}
+
+.checkbox {
+    padding: 10px;
+}
+
 .pieces {
     text-align: center;
     display: flex;

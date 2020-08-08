@@ -1,11 +1,11 @@
-var white = ['Rook', 'Knight', 'Bishop', 'Queen', 'King', 'Pawn'];
-var black = ['Rook', 'Knight', 'Bishop', 'Queen', 'King', 'Pawn'];
+let white = ['Rook', 'Knight', 'Bishop', 'Queen', 'King', 'Pawn'];
+let black = ['Rook', 'Knight', 'Bishop', 'Queen', 'King', 'Pawn'];
 
 const generatePieces = (face) => {
     const pieces = [];
     const arr = face === 'White' ? white : black;
     for (let i = 0; i < 3; i++) {
-        pieces.push(white[parseInt(Math.random() * (arr.length))]);
+        pieces.push(arr[parseInt(Math.random() * (arr.length))]);
     }
     const markup = generateMarkup(face, pieces);
     document.getElementById(face.toLowerCase()).innerHTML = markup;
@@ -27,3 +27,16 @@ const generateMarkup = (face, pieces) => (
         </div>
     </div>`
 );
+
+const modifyPieces = (e, face, piece) => {
+    let arr = face === 'White' ? white : black;
+    if (e.checked) {
+        arr.push(piece);
+    } else {
+        arr = arr.filter(data => data !== piece);
+    }
+    face === 'White'
+        ? white = arr
+        : black = arr;
+    generatePieces(face);
+}
