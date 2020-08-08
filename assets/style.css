@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    min-height: 100vh;
+}
+
+.wrapper {
+    min-height: calc(100vh - 19px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pieces-area {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.area-white {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.area-black {
+    background-color: #000;
+    color: white;
+    border-color: white;
+}
+
+.pieces {
+    text-align: center;
+    display: flex;
+    flex: 1 1 0;
+}
+
+.piece {
+    padding: 10px;
+}
+
+.img {
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #eee;
+}
+
+.black-img {
+    border-color: white;
+    background: #999;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    transition-duration: .5s;
+}
+
+.btn-white {
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-white:hover {
+    background: black;
+    color: white;
+}
+
+.btn-black {
+    background: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-black:hover {
+    background: white;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    background: rgb(0, 128, 128, 0.4);
+    color: black;
+    font-size: 15px;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.chess {
+    font-size: 10px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}

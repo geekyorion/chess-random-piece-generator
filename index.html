@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random chess pieces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="pieces-area area-white">
+            <div class="alive"></div>
+            <div id="white"></div>
+            <div class="controls"><button class="btn btn-white" onclick="generatePieces('White');">Generate
+                    White</button></div>
+        </div>
+
+        <div class="pieces-area area-black">
+            <div class="alive"></div>
+            <div id="black"></div>
+            <div class="controls"><button class="btn btn-black" onclick="generatePieces('Black');">Generate
+                    Black</button></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed by
+            <a class="links" href="https://github.com/geekyorion" target="_blank">GeekyOrion</a>
+        </p>
+        <p class="chess">
+            Picture credits:
+            <a class="links" href="https://www.chess.com/" target="_blank">Chess.com</a>
+        </p>
+    </footer>
+
+    <script src="./assets/jscode.js"></script>
+</body>
+
+</html>
